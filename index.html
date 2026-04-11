@@ -9,24 +9,20 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg-outer: #ece7db;
   --bg: #fafaf7;
   --ink: #1a1a1a;
   --muted: #6b6b6b;
   --accent: #0550ae;
   --rule: rgba(26, 26, 26, 0.18);
-  --shadow: 0 1px 2px rgba(40, 30, 10, 0.06), 0 20px 60px rgba(40, 30, 10, 0.08);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-outer: #050505;
-    --bg: #141414;
+    --bg: #0e0e0e;
     --ink: #e8e6e3;
     --muted: #8a8a85;
     --accent: #8ab4ff;
     --rule: rgba(232, 230, 227, 0.18);
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 20px 60px rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -35,26 +31,22 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--bg-outer);
+  background: var(--bg);
   color: var(--ink);
-  min-height: 100%;
 }
 
 body {
   font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 1.55;
+  line-height: 1.7;
   font-feature-settings: "liga" 0, "calt" 0;
   -webkit-font-smoothing: antialiased;
 }
 
 main {
-  max-width: 82ch;
-  margin: 3rem auto 4rem;
-  padding: 4rem 4rem 4.5rem;
-  background: var(--bg);
-  box-shadow: var(--shadow);
+  max-width: 100ch;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
 }
 
 a, a:visited {
@@ -69,7 +61,7 @@ a:hover { text-decoration-thickness: 2px; }
 h1, h2 {
   font-size: 1rem;
   font-weight: 700;
-  margin: 2.25rem 0 0.75rem;
+  margin: 2.75rem 0 0.9rem;
   letter-spacing: 0;
 }
 
@@ -157,11 +149,7 @@ ul li::before {
     gap: 1.5rem;
   }
   .intro-side img { width: 140px; height: 140px; }
-  main {
-    margin: 0;
-    padding: 2rem 1.25rem 4rem;
-    box-shadow: none;
-  }
+  main { padding: 2rem 1.25rem 4rem; }
 }
 </style>
 </head>
